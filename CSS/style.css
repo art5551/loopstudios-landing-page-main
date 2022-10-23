@@ -250,6 +250,7 @@ select {
  /* start initial design with mobile design first */
  body {
   border: 10px solid gray;
+  background-color: black;
   height: 100vh;
   /* setting max-width to width of image provided */
 }
