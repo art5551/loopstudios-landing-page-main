@@ -265,18 +265,18 @@ select {
   background: url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
 
 .section-one-heading {
   grid-column-start: 1;
-  grid-row-start: 4;
-  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-column-end: 10;
   font-family: var(--font-family-secondary);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.75rem;
   line-height: 1;
   color: white;
   border: 1px solid white;
@@ -340,16 +340,6 @@ footer {
 }
 
 
-@media (min-width: 38em) {
-  main {
-      grid-template-areas:
-      "one one"
-      "two five"
-      "three five"
-      "four four";
-  }
-}
-
 
 @media (min-width: 75em) {
   .section-one {
@@ -360,9 +350,10 @@ footer {
     margin: auto;
   }
   .section-one-heading {
+    font-size: 4em;
     grid-column-start: 2;
     grid-row-start: 4;
-    grid-column-end: 5;
+    grid-column-end: 6;
   }
 
   .section-two {
