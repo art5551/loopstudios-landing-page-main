@@ -61,9 +61,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Struggled a bit getting the background image stable for both mobile and desktop. Tried to utilize the picture element to easiy toggle between two modes but it wont work as a background.
+Was using flex to center/justify items on screen but is not viable for ths project. Instead, started setting body width to 100% and then giving child elements a max-width and setting margin auto will center the element. Basing the child element, in this case, to the width of the supplied image, 1440px.
 
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

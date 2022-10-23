@@ -285,13 +285,6 @@ select {
   padding: .5em;
 }
 
-.first-page-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  position: relative;
-}
 
 /* Attribution is for the fem footer */
 .attribution {
@@ -339,14 +332,6 @@ footer {
     grid-column-start: 2;
     grid-row-start: 4;
     grid-column-end: 5;
-    font-family: var(--font-family-secondary);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 4rem;
-    line-height: 1;
-    color: white;
-    border: 1px solid white;
-    padding: .5em;
   }
   
 }
