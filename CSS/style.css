@@ -249,7 +249,6 @@ select {
  /* setting the initial content attributes here */
  /* start initial design with mobile design first */
  body {
-  border: 10px solid red;
   background-color: white;
   /* height: 100vh; */
   /* setting max-width to width of image provided */
@@ -258,7 +257,6 @@ select {
 
 
 .section-one {
-  border: 10px solid black;
   display: grid;
   max-width: 1440px;
   height: 650px;
@@ -294,7 +292,7 @@ select {
 }
 
 .section-two-heading {
-
+  border: 1px solid black;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: var(--font-family-secondary);
@@ -317,14 +315,79 @@ select {
   text-align: center;
 }
 
-.section-three {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  padding: 1rem;
+.section-three-header {
+  border: 1px solid black;
+  margin-top: 4rem;
+  padding: 3rem;
+
+}
+
+.section-three-header .title {
+  border: 1px solid black;
+  font-family: var(--font-family-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+.btn-outlined-secondary {
+  display: none;
 }
 
 
+.section-three-images {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 1rem;
+}
+
+.section-three-picture {
+  position: relative;
+}
+
+.picture-description {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-family: var(--font-family-prime);
+  font-size: 2rem;
+  color: rgb(140, 140, 140);
+  line-height: 1;
+  width: 150px;
+}
+
+.btn-outlined-secondary-two {
+  margin-top: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: .5rem 3.5rem;
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  font-family: var(--font-family-prime);
+}
+
+.section-three-mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  color: white;
+}
 /* Attribution is for the fem footer */
 .attribution {
   font-size: 11px; 
@@ -362,7 +425,6 @@ footer {
   }
 
   .section-two {
-    border: 2px solid blue;
     display: flex;
     align-items: flex-end;
     max-width: 1100px;
@@ -402,12 +464,59 @@ footer {
   .section-three {
     max-width: 1100px;
     margin: auto;
-    display: grid;
+  }
+
+  .section-three-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .picture-description {
+    top: 75%;
+
+  }
+  
+
+  .btn-outlined-secondary {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: .5rem 1.5rem;
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    font-family:var(--font-family-prime);
+  }
+
+  .btn-outlined-secondary-two {
+    display: none;
+  }
+
+  .section-three-header .title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+  
+  }
+  
+  .section-three-images .title {
+    font-family: var(--font-family-secondary);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .section-three-images {
     grid-template-columns: repeat(4, 1fr);
-    gap: 0;
+    grid-template-rows: repeat(2, 1fr);
     padding: 0;
 
   }
+
 
 
 }
