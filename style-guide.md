@@ -39,3 +39,28 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+        <picture class="section-three-picture-one">
+          <source media="(min-width: 38rem)"
+                  srcset="./images/desktop/image-deep-earth.jpg">
+
+          <img src="./images/mobile/image-deep-earth.jpg" alt="A man standing and wearing virtual reality goggles. He is posing as if he is growling with his hands extended as claws." />
+        </picture>
+        <picture class="section-three-picture-two">
+          <source media="(min-width: 38rem)"
+                  srcset="./images/desktop/image-night-arcade.jpg">
+
+          <img src="./images/mobile/image-night-arcade.jpg" alt="A man standing and wearing virtual reality goggles. He is posing as if he is growling with his hands extended as claws." />
+        </picture>
+        <picture class="section-three-picture-three">
+          <source media="(min-width: 38rem)"
+                  srcset="./images/desktop/image-soccer-team.jpg">
+
+          <img src="./images/mobile/image-soccer-team.jpg" alt="A man standing and wearing virtual reality goggles. He is posing as if he is growling with his hands extended as claws." />
+        </picture>
+        <picture class="section-three-picture-four">
+          <source media="(min-width: 38rem)"
+                  srcset="./images/desktop/image-grid.jpg">
+
+          <img src="./images/mobile/image-grid.jpg" alt="A man standing and wearing virtual reality goggles. He is posing as if he is growling with his hands extended as claws." />
+        </picture>
+
