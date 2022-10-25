@@ -368,9 +368,9 @@ select {
   position: absolute;
   top: 55%;
   left: 5%;
-  font-family: var(--font-family-prime);
+  font-family: var(--font-family-secondary);
   font-size: 2rem;
-  color: rgb(140, 140, 140);
+  color: white;
   line-height: 1;
   width: 150px;
 }
