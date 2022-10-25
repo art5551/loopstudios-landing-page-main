@@ -121,7 +121,6 @@ select {
 }
 
 .nav-header ul{
-
   margin: 0;
   margin-top: 5em;
   /*--changed padding from 0 to 5--*/
@@ -130,7 +129,6 @@ select {
 }
 
 .nav-header li{
-
   margin-bottom: 1em;
   margin-bottom: 1em;
 }
