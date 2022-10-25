@@ -7,8 +7,7 @@
 
 /* Beginning of reset CSS with minor changes recommended by Kevin Powell */
 /* see youtube https://www.youtube.com/watch?v=h3bTwCqX4ns */
-/* Box sizing rules */
-/* Box sizing rules */
+
 *,
 *::before,
 *::after {
@@ -390,6 +389,11 @@ select {
   font-family: var(--font-family-prime);
 }
 
+.btn-outlined-secondary-two:hover {
+  background-color: black;
+  color: white;
+}
+
 .section-three-mobile-btn {
   display: flex;
   align-items: center;
@@ -508,6 +512,11 @@ footer {
     border: 1px solid black;
     color: black;
     font-family:var(--font-family-prime);
+  }
+
+  .btn-outlined-secondary:hover {
+    background-color: black;
+    color: white;
   }
 
   .btn-outlined-secondary-two {
