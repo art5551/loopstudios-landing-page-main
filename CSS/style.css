@@ -89,14 +89,17 @@ select {
   }
 }
 
+/******************************************/
 /*--Header and navigation CSS begin here--*/
+/******************************************/
 .header{
-  margin-top: 2em;
+  /* Changing margin top to 0 and adding padding instead */
+  /* margin-top: 2em; */
+  padding: 2em;
   text-align: center;
   position: fixed;
   width: 100%;
 }
-
 
 .nav-toggle{
   display: none;
@@ -104,6 +107,9 @@ select {
 
 .nav-header{
   width: 100%;
+  /*--added 100vh so the screen will drop and cover the entire moile screen*/
+  /*--can remove and just the menu items will drop down--*/
+  height: 100vh;
   position: absolute;
   text-align: left;
   top: 100%;
@@ -111,12 +117,16 @@ select {
   transform: scale(1,0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  /*--added background color and 100vh so the screen will drop and cover the entire moile screen*/
+  background-color: black;
 }
 
 .nav-header ul{
 
   margin: 0;
-  padding: 0;
+  margin-top: 5em;
+  /*--changed padding from 0 to 5--*/
+  padding: 5em;
   list-style: none;
 }
 
@@ -130,7 +140,7 @@ select {
   font-family: var(--font-family-prime);
   color: white;
   text-decoration: none;
-  font-size: .75rem;
+  font-size: 2rem;
   text-transform: capitalize;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -147,8 +157,12 @@ select {
 .nav-toggle-label{
   position: absolute;
   top: 0;
-  left: 0;
-  margin-left: 1em;
+  /*-- change left and margin to right to show hamburger on right side --*/
+  /* left: 0; */
+  /* margin-left: 1em; */
+  right: 0;
+  margin-right: 1em;
+  /* *********************************************************************** */
   height: 100%;
   display: flex;
   align-items: center;
@@ -212,6 +226,9 @@ select {
 
     display: flex;
     justify-content: flex-end;
+    /*--changed above in mobile first--*/
+    margin: 0;
+    padding: 0;
 
   }
 
@@ -223,6 +240,8 @@ select {
   .nav-header a{
     opacity: 1;
     position: relative;
+    /*--changed to larger size in mobile first--*/
+    font-size: .75rem;
   }
 
   .nav-header a::before{
@@ -244,7 +263,9 @@ select {
     transform: scale(1,1);
   }
 }
-/*--Header and navigation CSS end here--*/
+/******************************************/
+/*---Header and navigation CSS end here---*/
+/******************************************/
 
  /* setting the initial content attributes here */
  /* start initial design with mobile design first */
@@ -278,7 +299,8 @@ select {
   line-height: 1;
   color: white;
   border: 1px solid white;
-  padding: .5em;
+  padding: .5rem;
+  margin: 1rem;
 }
 
 .section-two {
@@ -292,7 +314,6 @@ select {
 }
 
 .section-two-heading {
-  border: 1px solid black;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: var(--font-family-secondary);
@@ -316,14 +337,12 @@ select {
 }
 
 .section-three-header {
-  border: 1px solid black;
   margin-top: 4rem;
   padding: 3rem;
 
 }
 
 .section-three-header .title {
-  border: 1px solid black;
   font-family: var(--font-family-secondary);
   text-transform: uppercase;
   font-weight: 400;
@@ -511,14 +530,172 @@ footer {
   }
 
   .section-three-images {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0;
-
+    grid-auto-rows: repeat(2, 1fr);
   }
+
 
 
 
 }
 
+/******************************************/
+/*--Footer and navigation CSS begin here--*/
+/******************************************/
+.footer{
+  border: 2px solid black;
+  background: black;
+  /* Changing margin top to 0 and adding padding instead */
+  /* margin-top: 2em; */
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.footer-logo {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.nav-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+.nav-footer ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-footer li{
+  margin-left: 0;
+  margin-top: 2rem;
+}
+
+.nav-footer a{
+  font-family: var(--font-family-prime);
+  color: white;
+  text-decoration: none;
+  font-size: .75rem;
+  text-transform: capitalize;
+
+}
+
+.nav-footer a:hover{
+  color: gray;
+}
+
+.social-network ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.social-network a {
+  font-family: var(--font-family-prime);
+  color: white;
+  text-decoration: none;
+  font-size: .75rem;
+  text-transform: uppercase;
+  margin-left: 3rem;
+}
+
+.footer-copyright {
+  font-family: var(--font-family-prime);
+  color: white;
+  font-size: .75rem;
+  margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 800px) {
+  
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+ 
+  }
+
+
+  .footer-logo{
+    grid-column: 2;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  .nav-footer{
+    all: unset;
+    grid-row: 2;
+    grid-column: 2 / span 3;
+  }
+
+  .nav-footer ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*--changed above in mobile first--*/
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .nav-footer li{
+    margin-top: 0;
+    margin-right: 3em;
+    margin-bottom: 15px;
+  }
+
+  .nav-footer a{
+    opacity: 1;
+    position: relative;
+    /*--changed to larger size in mobile first--*/
+    font-size: .75rem;
+  }
+
+  .nav-footer a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background: white;
+    position: absolute;
+    /* shows line below text or change to top to show above text */
+    bottom: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+
+    transition: transform ease-in-out 250ms;
+  }
+
+  .nav-footer a:hover::before{
+    transform: scale(1,1);
+  }
+
+  .social-network {
+    grid-column: 7 / span 2;
+  }
+
+  .footer-copyright {
+    grid-row: 2;
+    grid-column: 7 / span 2 ;
+  }
+}
+/******************************************/
+/*---Footer and navigation CSS end here---*/
+/******************************************/
 
