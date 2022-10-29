@@ -275,7 +275,6 @@ select {
 
 
 .section-one {
-  display: grid;
   max-width: 1440px;
   height: 650px;
   background: url(../images/mobile/image-hero.jpg);
@@ -286,9 +285,10 @@ select {
 }
 
 .section-one-heading {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-column-end: 10;
+  position: relative;
+  top: 17rem;
+  left: 2rem;
+  width: 350px;
   font-family: var(--font-family-secondary);
   text-transform: uppercase;
   font-weight: 400;
@@ -299,6 +299,7 @@ select {
   padding: .5rem;
   margin: 1rem;
 }
+
 
 .section-two {
   max-width: 1440px;
@@ -445,10 +446,19 @@ footer {
     margin: auto;
   }
   .section-one-heading {
-    font-size: 4em;
-    grid-column-start: 2;
-    grid-row-start: 4;
-    grid-column-end: 6;
+    position: relative;
+    top: 14rem;
+    left: 12rem;
+    width: 600px;
+    font-family: var(--font-family-secondary);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 2rem;
   }
 
   .section-two {
