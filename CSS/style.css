@@ -234,7 +234,7 @@ select {
     margin-bottom: 0;
   }
 
-  .nav-header a{
+  .nav-header a {
     opacity: 1;
     position: relative;
     /*--changed to larger size in mobile first--*/
