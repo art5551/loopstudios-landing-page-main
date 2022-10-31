@@ -438,27 +438,21 @@ footer {
 
 @media (min-width: 75em) {
   .section-one {
+    display: grid;
     max-width: 1440px;
     height: 650px;
     background: url(../images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
     margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 
   .section-one-heading {
-    position: relative;
-    top: 14rem;
-    left: 12rem;
-    width: 600px;
-    font-family: var(--font-family-secondary);
-    text-transform: uppercase;
-    font-weight: 400;
+    grid-row: 3;
+    grid-column: 2 / 4;
     font-size: 4rem;
-    line-height: 1;
-    color: white;
-    border: 1px solid white;
-    padding: 1rem;
-    margin: 2rem;
+    padding-right: 5rem;
   }
 
   .section-two {
