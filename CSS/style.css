@@ -144,7 +144,7 @@ select {
 }
 
 .nav-header a:hover{
-  color: white;
+  color: gray;
 }
 
 .nav-toggle:checked ~ nav{
@@ -239,6 +239,10 @@ select {
     position: relative;
     /*--changed to larger size in mobile first--*/
     font-size: .75rem;
+  }
+
+  .nav-header a:hover {
+    color: white;
   }
 
   .nav-header a::before{
